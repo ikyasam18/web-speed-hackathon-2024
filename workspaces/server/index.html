@@ -10,19 +10,36 @@
       type="image/x-icon"
     />
     <title>WSH 2024</title>
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Black.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Bold.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-ExtraBold.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-ExtraLight.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Light.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Medium.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Regular.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-SemiBold.woff" as="font" type="font/woff" />
-    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Thin.woff" as="font" type="font/woff" />
+    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Bold.woff2" as="font" type="font/woff2" />
+    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Medium.woff2" as="font" type="font/woff2" />
+    <link rel="preload" crossorigin="anonymous" href="/assets/NotoSansJP-Regular.woff2" as="font" type="font/woff2" />
     <link as="image" crossorigin="anonymous" href="/assets/cyber-toon.svg" rel="preload" />
     <script id="inject-data" type="application/json"></script>
     <script type="text/javascript" src="/client.global.js" defer></script>
     <style id="tag"></style>
+    <style>
+      @font-face {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/assets/NotoSansJP-Regular.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url('/assets/NotoSansJP-Medium.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/assets/NotoSansJP-Bold.woff2') format('woff2');
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
