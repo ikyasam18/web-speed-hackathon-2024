@@ -1,5 +1,12 @@
 /* eslint-disable no-irregular-whitespace */
 export const CONTACT = `
+お問い合わせ
+
+お問い合わせはこちらのフォームからお願いいたします。
+24時間以内に返信いたします。
+
+メールアドレス: contact@cybertoon.example.com
+電話番号: 03-1234-5678（平日10:00-18:00）
 パソコン創世記
 富田倫生
 

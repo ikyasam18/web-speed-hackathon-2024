@@ -1,9 +1,25 @@
-import * as Icons from '@mui/icons-material';
+// 必要なアイコンのみを個別にインポート
+import ArrowBack from '@mui/icons-material/ArrowBack';
+import Close from '@mui/icons-material/Close';
+import Favorite from '@mui/icons-material/Favorite';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import NavigateNext from '@mui/icons-material/NavigateNext';
+import Search from '@mui/icons-material/Search';
+
+// アイコンのマッピングを作成
+const Icons = {
+  ArrowBack,
+  Close,
+  Favorite,
+  FavoriteBorder,
+  NavigateNext,
+  Search
+};
 
 type Props = {
   color: string;
   height: number;
-  type: keyof typeof Icons;
+  type: 'ArrowBack' | 'Close' | 'Favorite' | 'FavoriteBorder' | 'NavigateNext' | 'Search';
   width: number;
 };
 
