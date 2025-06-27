@@ -37,16 +37,17 @@ export default defineConfig(async (): Promise<Options[]> => {
         };
         options.publicPath = '/';
       },
-      // 実はここも不要説
+      // 必要なポリフィルのみ使用
       esbuildPlugins: [
         polyfillNode({
           globals: {
             process: false,
           },
           polyfills: {
-            events: true,
-            fs: true,
-            path: true,
+            // 必要なポリフィルのみ残す
+            events: false,
+            fs: false,
+            path: false,
           },
         }),
       ],
@@ -61,9 +62,9 @@ export default defineConfig(async (): Promise<Options[]> => {
       platform: 'browser',
       shims: true,
       sourcemap: false,
-      splitting: false,
+      splitting: true,
       target: ['chrome58'],
-      treeshake: false,
+      treeshake: true,
     },
   ];
 });
